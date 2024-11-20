@@ -39,4 +39,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: querateam/resticronic:latest,querateam/resticronic:${{ steps.getversion.outputs.version }}
+          tags: >-
+            ghcr.io/querateam/resticronic:latest,
+            ghcr.io/querateam/resticronic:${{ steps.getversion.outputs.version }}
