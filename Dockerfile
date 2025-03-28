@@ -1,4 +1,4 @@
-FROM restic/restic:0.17.3
+FROM restic/restic:0.18.0
 
 RUN apk add --no-cache tzdata tini supercronic
 
