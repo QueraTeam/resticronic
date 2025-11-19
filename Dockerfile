@@ -1,6 +1,6 @@
 FROM restic/restic:0.18.1
 
-RUN apk add --no-cache tzdata tini supercronic
+RUN apk add --no-cache tzdata tini supercronic zstd
 
 # Copy entrypoint script
 COPY entrypoint.sh /entrypoint.sh
